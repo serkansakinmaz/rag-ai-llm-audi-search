@@ -6,3 +6,7 @@ https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?tabs=g
 
 # Deploy Azure OpenAI [GPT 4]
 https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions#gpt-4o-and-gpt-4-turbo
+
+#Setup local python enviroment
+uv init
+uv add -r requemements.txt
