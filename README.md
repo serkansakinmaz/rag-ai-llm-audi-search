@@ -46,3 +46,14 @@ print("Creating search index...")
 create_search_index(search_index_name)
 print(f"Search index '{search_index_name}' created.")
 ```
+## Step 4 - Upload data to index
+```
+print("Uploading chunks to search index...")
+list_of_files = os.listdir(output_vector_chunks_directory)
+for file in list_of_files:
+    print(file)
+    if file.endswith(".json"):
+        filepath = os.path.join(output_vector_chunks_directory, file)
+        upload_chunk_document(filepath, search_index_name)
+        print(f"Uploaded {file} to search index.")
+```
