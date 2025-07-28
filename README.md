@@ -8,5 +8,8 @@ https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?tabs=g
 https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions#gpt-4o-and-gpt-4-turbo
 
 # Setup local python enviroment
+
+## init
 uv init
+## pull the dependencies
 uv add -r requemements.txt
