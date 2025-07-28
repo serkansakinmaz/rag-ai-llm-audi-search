@@ -13,3 +13,12 @@ https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?tabs=g
 uv init
 ## pull the dependencies
 uv add -r requemements.txt
+
+# Prepare data for the application
+
+## Step 1
+In the main.py, run the block in the Step 1
+```
+print("Splitting chapters...")
+split_file_by_token_count(input_file, output_text_chunks_directory)
+```
