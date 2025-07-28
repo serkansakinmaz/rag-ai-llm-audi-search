@@ -1,0 +1,14 @@
+[project]
+name = "rag-ai-llm-audi-search"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "azure-ai-inference>=1.0.0b9",
+    "azure-core>=1.35.0",
+    "azure-search-documents>=11.5.3",
+    "dotenv>=0.9.9",
+    "openai>=1.97.1",
+    "tiktoken>=0.9.0",
+]
