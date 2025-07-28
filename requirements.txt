@@ -1,0 +1,6 @@
+azure-ai-inference 
+azure-core 
+azure-search-documents 
+dotenv
+openai
+tiktoken
