@@ -57,3 +57,8 @@ for file in list_of_files:
         upload_chunk_document(filepath, search_index_name)
         print(f"Uploaded {file} to search index.")
 ```
+
+## Step 5 - Test the Azure AI Search
+```uv run generate_api_response_json.py```
+## Step 6 - Run the application
+```uv run rag.py```
