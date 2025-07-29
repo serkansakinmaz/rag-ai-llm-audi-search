@@ -1,3 +1,6 @@
+<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/c30834f6-244a-44cd-917a-299ba1812791" />
+
+
 # Create Azure AI Search Service
 https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search
 
