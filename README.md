@@ -1,4 +1,4 @@
-<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/c30834f6-244a-44cd-917a-299ba1812791" />
+<img width="477" height="643" alt="Screenshot 2025-07-29 at 10 54 23" src="https://github.com/user-attachments/assets/a6a180d4-b519-43cf-96ef-c67aa790347d" />
 
 
 # Create Azure AI Search Service
