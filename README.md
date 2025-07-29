@@ -1,5 +1,22 @@
 <img width="477" height="643" alt="Screenshot 2025-07-29 at 10 54 23" src="https://github.com/user-attachments/assets/a6a180d4-b519-43cf-96ef-c67aa790347d" />
 
+# Audi Q5 Manual Q&A with Azure AI Search & GPT-4o
+This project demonstrates how to build a Retrieval-Augmented Generation (RAG) pipeline using:
+
+Azure AI Search
+
+Azure AI Foundry
+
+Azure OpenAI (text-embedding-large-3, GPT-4o)
+
+Audi Q5 Manual as Source Data
+
+Local Python Environment with uv
+
+LLM to generate meaningful responses from indexed manual data
+
+We upload the Audi Q5 owner's manual to Azure AI Search and use GPT-4o to generate intelligent answers to user questions based on the manual.
+
 
 # Create Azure AI Search Service
 https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search
