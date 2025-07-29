@@ -27,10 +27,13 @@ https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search
 https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions#embeddings
 
 # Deploy Azure OpenAI [GPT 4]
+-Embeddings Model: text-embedding-ada-002 or text-embedding-large-3
+-LLM Model: gpt-4o
+Ensure both models are deployed in the Azure OpenAI Studio and ready for use.
 https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions#gpt-4o-and-gpt-4-turbo
 
 # Setup local python enviroment
-
+We're using uv for dependency management.
 ## init
 uv init
 ## pull the dependencies
@@ -38,14 +41,14 @@ uv add -r requemements.txt
 
 # Prepare data for the application
 
-## Step 1 - Prepare data for split
-In the main.py, run the block in the Step 1
+## Step 1 - Prepare data for splitting
+Open main.py and run the first block to split the manual into token-limited chunks.
 ```
 print("Splitting chapters...")
 split_file_by_token_count(input_file, output_text_chunks_directory)
 ```
 ## Step 2 - Split the files
-In the main.py, run the block in the Step 1
+Ensure the chunks are generated and stored in the specified directory.
 ```
 with open("chunks.json", "r") as f:
     chapters = json.load(f)
@@ -63,12 +66,14 @@ for i, chapter in enumerate(chapters):
         json.dump(chunk, f, indent=4)
 ```
 ## Step 3 - Create an index
+Use the SDK or REST API to define and create your index schema.
 ```
 print("Creating search index...")
 create_search_index(search_index_name)
 print(f"Search index '{search_index_name}' created.")
 ```
 ## Step 4 - Upload data to index
+Upload the tokenized chunks to Azure AI Search using batch operations.
 ```
 print("Uploading chunks to search index...")
 list_of_files = os.listdir(output_vector_chunks_directory)
@@ -82,5 +87,14 @@ for file in list_of_files:
 
 ## Step 5 - Test the Azure AI Search
 ```uv run generate_api_response_json.py```
-## Step 6 - Run the application
+## Step 6 - Run the Full RAG application
 ```uv run rag.py```
+
+# Ask questions :
+
+“Why tire pressure warning ?”
+
+<img width="979" height="292" alt="Screenshot 2025-07-29 at 11 10 22" src="https://github.com/user-attachments/assets/2e0e3290-fbbc-414d-97f6-f5b81ee0c63a" />
+
+
+The system searches the manual using Azure AI Search and generates a clear, LLM-enhanced response via GPT-4o.
