@@ -19,6 +19,8 @@ We upload the Audi Q5 owner's manual to Azure AI Search and use GPT-4o to genera
 
 
 # Create Azure AI Search Service
+Provision an Azure AI Search instance via the Azure portal or CLI.
+You'll use this to index and query your Audi Q5 manual.
 https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search
 
 # Deploy Azure OpenAI [embeddings]
